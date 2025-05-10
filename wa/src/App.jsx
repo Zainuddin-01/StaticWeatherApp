@@ -4,20 +4,8 @@ import './App.css'
 
 function App() {
 
-  // const [city , setCity] = useState('')
-  // const [weather, setWeather] = useState(null)
-
-  // const weatherApi = async () => {
-  //   const api = 'e1c6e82218bb35cbbc67cf1a81708ed0'
-  //   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api}&units=metric`;
-  //   fetch(url)
-  //   .then((res)=> res.json())
-  //   .then((data)=> setWeather(data))
-  //   .catch((err)=> alert(`Fetch Error: ${err}`))
-  // }
-
   return (
-    <div className='container flex justify-center items-center'>
+    <div className='container mt-24 flex justify-center items-center'>
     <div className='bg-slate-600 p-5 w-96 rounded-lg text-white'>
       <div className='flex justify-center'> 
       <input type="text" className='bg-white px-2 text-black border border-5 border-yellow-400 rounded-s-lg w-64'/>
