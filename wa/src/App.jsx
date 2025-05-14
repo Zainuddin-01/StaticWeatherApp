@@ -8,7 +8,7 @@ function App() {
   const [weather, setWeather] = useState(null)
 
   const weatherApi = async () => {
-    const api = 'User your apikey'
+    const api = 'Use your apikey'
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api}&units=metric`
     fetch(url) 
     .then((res)=> res.json())
@@ -23,6 +23,7 @@ function App() {
       <div className='flex justify-center'> 
       <input type="text"
       onChange={(e)=> setCity(e.target.value)}
+      placeholder='Enter city...'
       className='bg-white px-2 text-black border border-5 border-yellow-400 rounded-s-lg w-64'/>
       <button onClick={weatherApi} className='bg-yellow-400 p-2 rounded-e-lg'>
       <FaSearch className="cursor-pointer" />
